@@ -3,5 +3,5 @@ data$Date <- as.Date(data$Date, format = "%d/%m/%Y")
 data <- subset(data, Date == "2007-02-01" | data == "2007-02-02")
 
 png("plot1.png")
-hist(data$Global_active_power, main="Global Active Power", xlab = "Global Active Power (kilowatts)", border="red")
+hist(data$Global_active_power, main="Global Active Power", xlab = "Global Active Power (kilowatts)", col="red")
 dev.off()
